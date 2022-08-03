@@ -13,24 +13,36 @@
 /* ============ NavBar / NavBarIndex ============ */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 10vh;
   align-items: center;
   background-color: var(--grey);
 
-  .link {
-    margin-left: 10px;
-    color: var(--black);
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 10px;
-    line-height: 22px;
+  .container-logo {
+    margin-left: 3%;
+
+    .logo {
+      max-width: 30%;
+    }
   }
-  .link:hover {
-    color: var(--blue);
-    text-decoration: none;
-    transition: 0.3s;
+
+  .container-links {
+    margin-right: 10%;
+
+    .link {
+      margin-right: 15px;
+      color: var(--black);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      margin-left: 10px;
+      line-height: 22px;
+    }
+    .link:hover {
+      color: var(--blue);
+      text-decoration: none;
+      transition: 0.3s;
+    }
   }
 }
 
@@ -76,12 +88,14 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      background-color: rgb(103, 101, 103);
+      background-color: var(--grey);
       padding: 10px;
       border-radius: 15px;
 
       .tittle-login {
         font-size: 30px;
+        font-weight: 600;
+        margin-top: 15px;
       }
 
       .input-login {
@@ -89,10 +103,11 @@
         height: 25px;
         border-radius: 15px;
         padding: 10px;
+        margin-top: 10px;
       }
 
       .button-login {
-        margin-top: 10px;
+        margin-top: 15px;
         width: 30%;
         font-size: 20px;
         border-radius: 20px;
